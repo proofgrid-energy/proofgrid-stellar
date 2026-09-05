@@ -19,3 +19,5 @@ test('unsupported and non-JSON input fails before signing',()=>{assert.throws(()
 test('record is not changed by issuance',()=>{const before=structuredClone(record);createAttestation(record,key);assert.deepEqual(record,before);});
 
 test('inherited property is not a status',()=>assert.throws(()=>encodeStatus(manifest,'toString'),/Unknown state/));
+
+test('malformed trust policy cannot authorize an issuer',async()=>{for(const policy of [{enabled:'yes',manufacturers:['dyness'],schema_versions:['0.1']},{enabled:true,manufacturers:'dyness',schema_versions:['0.1']},{enabled:true,manufacturers:['dyness'],schema_versions:'0.1'}])assert.equal((await verifyAttestation(record,manifest,{[key.publicKey()]:policy},lookup)).status,'untrusted_issuer');});

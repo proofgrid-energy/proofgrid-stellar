@@ -50,7 +50,7 @@ export async function verifyAttestation(record,manifest,trust,lookup) {
  try {checkManifest(manifest);jsonOnly(record);if(!validateEvidence(record).valid)throw Error('Invalid evidence');if(!timingSafeEqual(Buffer.from(digest(record,manifest),'hex'),Buffer.from(manifest.commitment,'hex')))throw Error('Evidence commitment mismatch');}
  catch(error){return {status:'invalid',reason:error.message};}
  const authority=trust&&Object.hasOwn(trust,manifest.issuer)?trust[manifest.issuer]:undefined;
- if(!authority?.enabled||!authority.manufacturers?.includes(record.asset.manufacturer)||!authority.schema_versions?.includes(record.schema_version))return {status:'untrusted_issuer',reason:'Issuer is not enabled for this manufacturer/schema in consumer policy'};
+ if(authority?.enabled!==true||!Array.isArray(authority.manufacturers)||!Array.isArray(authority.schema_versions)||!authority.manufacturers.includes(record.asset.manufacturer)||!authority.schema_versions.includes(record.schema_version))return {status:'untrusted_issuer',reason:'Issuer is not enabled for this manufacturer/schema in consumer policy'};
  let entry;try{entry=await lookup(manifest.issuer,manifest.id);}catch{return {status:'unknown',reason:'Ledger lookup unavailable'};}
  if(!entry)return {status:'unknown',reason:'No current ledger entry'};
  if(!['active','revoked','superseded'].includes(entry.state)||entry.commitment!==manifest.commitment||(entry.state==='superseded'&&(!hex(entry.successor,32)||entry.successor===manifest.id)))return {status:'invalid',reason:'Ledger status does not match attestation'};

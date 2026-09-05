@@ -1,7 +1,5 @@
 # ProofGrid Stellar
 
-![ProofGrid Stellar banner with the connected grid emblem and violet accents](assets/brand/readme-banner.png)
-
 [![CI](https://github.com/proofgrid-energy/proofgrid-stellar/actions/workflows/ci.yml/badge.svg)](https://github.com/proofgrid-energy/proofgrid-stellar/actions/workflows/ci.yml)
 
 **Private evidence commitments and issuer-status verification on Stellar testnet.**

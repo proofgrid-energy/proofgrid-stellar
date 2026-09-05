@@ -1,0 +1,7 @@
+{
+  "package": "@proofgrid/core",
+  "version": "0.2.0-draft.0",
+  "source_commit": "c5d968371684ee3c12674d5a854aa47124ae1979",
+  "artifact": "vendor/proofgrid-core-0.2.0-draft.0.tgz",
+  "sha256": "00d08eb9072e3ee9a04251ab27d85ee889dbc6e5486c45e076683a1360d88904"
+}

@@ -1,0 +1,31 @@
+{
+  "network": "testnet",
+  "checked_at": "2026-09-05T10:17:53.139Z",
+  "issuer": "GBS3OH7O56XADIYUB7XXP5KAHYJADDIUPTHLY7AFUDOBK5TLREZ7B5TI",
+  "transactions": [
+    {
+      "hash": "94801b52208d871163f2373a140ebbe18407a077379c2c9954a5756d74bf5bf4",
+      "ledger": 4515974
+    },
+    {
+      "hash": "71b15a11bb5c9bcd27ebfa8832cc33ef44a167a5e3f0039b6c52e72f099bfa58",
+      "ledger": 4515975
+    },
+    {
+      "hash": "de5d3c205e80bab68a63f49225f943ae0f04863a0fb1b36ac4f2a1a1cb974ea9",
+      "ledger": 4515976
+    },
+    {
+      "hash": "c99c93433d391d1930cdb45b5a145ced34fa7589573cd3bbaf7df517f3aa115b",
+      "ledger": 4515977
+    }
+  ],
+  "checks": [
+    "active verified",
+    "supersession verified",
+    "revocation verified",
+    "tampering rejected",
+    "unknown issuer rejected"
+  ],
+  "note": "Only synthetic random commitments and state were published; private keys discarded. Testnet may reset."
+}

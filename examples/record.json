@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "record_id": "synthetic-stellar-demo",
+  "asset": {
+    "asset_id": "synthetic-battery",
+    "manufacturer": "dyness",
+    "model": "DL5.0C Pro",
+    "product_type": "battery",
+    "serial_number": "SYNTHETIC-PRIVATE-SERIAL"
+  }
+}

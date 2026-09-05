@@ -1,6 +1,6 @@
 # ProofGrid verification boundary
 
-SPDX-License-Identifier: MPL-2.0. Status: design boundary only, 2026-09-05.
+SPDX-License-Identifier: MPL-2.0. Status: original design boundary, 2026-09-05. The implemented testnet adapter and its narrower current-state guarantees are documented in [attestation-design.md](attestation-design.md). Historical M1-only statements below no longer describe implementation status.
 
 ProofGrid's core schema/Rule Pack work must be useful without a blockchain. This repository will address the separate problem of verification between organizations that do not share database control: who issued a statement, whether it changed, and whether it was revoked or replaced.
 

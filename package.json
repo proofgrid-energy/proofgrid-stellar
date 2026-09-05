@@ -1,0 +1,32 @@
+{
+  "name": "@proofgrid/stellar",
+  "version": "0.1.0-draft.0",
+  "private": true,
+  "type": "module",
+  "license": "MPL-2.0",
+  "description": "Private evidence commitments with Stellar testnet status verification",
+  "engines": {
+    "node": ">=24"
+  },
+  "files": [
+    "src",
+    "docs",
+    "LICENSES",
+    "LICENSING.md",
+    "vendor"
+  ],
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "test": "node scripts/check-contract.mjs && node --test --test-isolation=none test/*.test.mjs",
+    "demo": "node examples/offline-demo.mjs",
+    "demo:testnet": "node examples/testnet-demo.mjs",
+    "check:contract": "node scripts/check-contract.mjs"
+  },
+  "dependencies": {
+    "@proofgrid/core": "file:vendor/proofgrid-core-0.2.0-draft.0.tgz",
+    "@stellar/stellar-sdk": "17.0.1",
+    "canonicalize": "4.0.0"
+  }
+}

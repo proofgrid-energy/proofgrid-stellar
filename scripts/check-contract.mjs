@@ -1,0 +1,3 @@
+// SPDX-License-Identifier: MPL-2.0
+import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {createHash} from 'node:crypto';
+const root=new URL('../',import.meta.url),p=JSON.parse(readFileSync(new URL('vendor/provenance.json',root)));assert.equal(p.artifact,'vendor/proofgrid-core-0.2.0-draft.0.tgz');assert.equal(createHash('sha256').update(readFileSync(new URL(p.artifact,root))).digest('hex'),p.sha256);const installed=JSON.parse(readFileSync(new URL('node_modules/@proofgrid/core/package.json',root)));assert.equal(installed.version,p.version);assert.equal(installed.name,p.package);console.log('PASS pinned core artifact integrity and installed version');

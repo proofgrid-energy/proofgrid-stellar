@@ -9,3 +9,8 @@ Keep commits coherent. Pull requests should explain behavior, include relevant p
 Keep records, salts and signing secrets off-chain. Testnet demos must use synthetic records and ephemeral keys. Live network tests are opt-in and do not run in ordinary CI.
 
 New source uses MPL-2.0; preserve earlier Apache notices. Contributors retain their copyright. No CLA or attribution trailer is required by this project. Do not include private customer data, production credentials or manufacturer documents without a supported redistribution basis.
+
+Use focused `feat/<topic>`, `fix/<topic>`, `docs/<topic>`, or `test/<topic>` branches.
+Implementation PRs must include `Closes #<issue_id>` for the issue implemented,
+actual check results, and limitations. Open a tracking issue first if needed.
+Required CI must pass before merge. See MAINTAINERS.md for contact and review.

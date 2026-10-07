@@ -120,3 +120,15 @@ Start with [CONTRIBUTING.md](CONTRIBUTING.md). Current work includes detecting o
 ## License
 
 New ProofGrid source uses [MPL-2.0](LICENSE). [LICENSING.md](LICENSING.md) preserves earlier Apache grants and third-party notices. The vendored core artifact carries its own notices and source/hash provenance.
+
+## Stellar Wave submission preparation
+
+See the [submission brief](docs/SUBMISSION.md), [verification record](docs/VERIFICATION_OCT09.md),
+[maintainers](MAINTAINERS.md), and [focused contributor backlog](docs/WAVE_BACKLOG.md).
+
+### October 7 verification refresh
+
+The synthetic live Testnet lifecycle passed at ledgers 5072870–5072873:
+[transaction hashes and observed checks](docs/testnet-result-2026-10-07.json).
+The original September evidence is preserved. These are dated observations,
+not physical-event verification or a permanent-revocation guarantee.

@@ -35,3 +35,7 @@ Runtime: Node v24.15.0.
 - Changes will be proposed through a fork PR because the available account
   cannot push directly to the organization's protected branch. Merge decisions
   remain with maintainers. Recheck the final PR checks before applying.
+
+## October 8 recheck
+
+Node 24.15.0: 23 tests, pinned artifact check and offline demo passed again. All four October 7 transaction hashes were looked up again on October 8 and remain successful on Testnet; see testnet-lookup-2026-10-08.json. Preparation PR #8 was observed merged.

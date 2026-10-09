@@ -34,7 +34,7 @@ src/testnet.mjs; src/index.mjs; test/
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## 2. Detect issuer reactivation and deletion in attestation history
@@ -67,7 +67,7 @@ src/index.mjs; src/testnet.mjs; docs/attestation-design.md
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## 3. Prototype salt-preserving AttestProtocol interoperability
@@ -100,7 +100,7 @@ src/; docs/; examples/; test/
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## 4. Specify issuer key rotation and custody trust rules
@@ -133,7 +133,7 @@ src/index.mjs; docs/attestation-design.md; test/
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## 5. Bound manifest and evidence verification input sizes
@@ -165,7 +165,7 @@ src/index.mjs; test/; SECURITY.md
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## 6. Refresh the documented synthetic Testnet lifecycle evidence
@@ -198,7 +198,7 @@ examples/testnet-demo.mjs; docs/testnet-result.json; docs/verification-boundary.
 
 ## Contribution Guidelines
 
-Agree bounded scope with xteesamz or EthTobi through GitHub. Use a focused PR
+Agree bounded scope with EthTobi through GitHub. Use a focused PR
 with `Closes #<issue_id>`, actual check results, and remaining limitations.
 
 ## Published issue links
